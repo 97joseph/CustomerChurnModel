@@ -1,0 +1,25 @@
+As you can see you will mostly be working with the PA1-assignment.ipynb, the jupyter notebook. The notebook accesses the 2 dataset files: dataset.csv (Containing 9000 customer information (labeled, i.e., target column, Exited present)) and judge.csv (Containing 1000 customer information (unlabeled, i.e, target column, Exited not present)). Here below is a brief summary of the features you will find in both the datasets:
+
+* CustomerId: a unique identifier for each customer within the dataset. These values are not ordered sequentially within the dataset, and are only used to identify a specific customer. It typically does not have any influence to whether a customer leaves the business.
+* Surname: A string used to identify the customer in the dataset. Surname may be distinct amidst all or most customers. Because of this, it most likely won't affect the target variable. 
+* CreditScore: a numeric representation of the customer's individual fiscal credit score. Typically used to indicate eligibility for loans. Current credit scores use a range from 300 to 850, but the FICO auto score range uses 250-900. This feature likely determines retention rate of customers. 
+* Geography: this feature contains a categorical string representing the name of a country the customer is from originally. 
+* Gender: this feature contains a categorical string representing the gender of the customer ("Male"/"Female"). 
+* Age: a numerical integer representation of a customer's age. Intuition suggests that older customers are likely to have higher retention than younger customers.
+* Tenure: a numerical integer representation. It is assumed that this feature represents the number of total years the customer has been retained. It is likely that customers which have been retained longer will continue to be retained.
+* Balance: a numerical floating point number (to two decimal places of precision) indicating the customer's current bank balance (assumed total across all accounts). Customers with a greater balance may be less likely to exit the account due to difficulty of transfer. 
+* NumOfProducts: numeric integer value. It is assumed that this value represents the number of accounts (products) that this customer has open. Further evaluation of this feature would be needed to determine the usefulness of this feature, but at face-value, intuition dictates that a customer with more products is less likely to exit. 
+* HasCrCard: boolean flag (0 or 1) representing whether the customer has a credit card or not. 
+* IsActiveMember: boolean flag (0 or 1) representing whether the customer is an active member of the bank. It is assumed this indicates whether the customer has transactions on the regular banking statement. Intuition dictates that inactive members are more likely to exit. 
+* EstimatedSalary: numerical floating point representation of the customer's predicted salary (to two decomal places) intuition dictates that customers with different incomes may behave differently with respect to retention rate. 
+* Exited: boolean flag (0 or 1) representing whether the customer has exited their account. This is the target variable for the dataset. It should not be dropped, but should not be included as the training input (X), and should instead be separated as the target label (y). 
+
+The png file in the folder is not important. If you would want to have the same Python3.6+ notebook environment at your workspace, using the pip command and the provided "requirements.txt" file, you can install simply all the bare-minimum packages to start working right away. All you need to do is create a virtual environment with Python3.6+, and activate the environment and call:  pip install -r requirements.txt
+
+2. The  Jupyter notebook that you received was prepared in a way that you would read through and act on the notebook to solve in provided notebook cells... not elsewhere. The notebook is meant to be graded automatically, so please keep that in mind. You are okay to add new notebook cells, but won't be executed during grading.
+
+Also, only add codes in the specified notebook cell locations... marked #YOUR CODE HERE... Also, if you see a call to "raise NoImplementationError", be sure to replace that with your solution codes.
+
+3. Don't worry about the fact of automatic grading... I'll oversee everything... :D
+
+4. After you solve the assignment in the jupyter notebook, Save it, and submit here in Canvas to receive grade. For this assignment, Canvas only will accept the jupyter notebook in "*.ipynb" extension. I recommend you getting familiar with this tool and coding in Python. A quick tutorial I found is {https://youtu.be/jZ952vChhuI . But, there are tons of other tutorials you can find easily in places. Alright, Chao!
